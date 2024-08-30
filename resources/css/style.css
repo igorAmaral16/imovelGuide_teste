@@ -467,6 +467,7 @@ button, .button-class {
     }
 }
 
+
 @media (max-width: 480px) {
     .grid {
         grid-template-columns: 1fr; /* Coloca os itens em uma coluna */
