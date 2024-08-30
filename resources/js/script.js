@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
     // Exibição de telefones
     const telefones = {
         1: { showing: false, text: '(11) 94002-8922', defaultText: 'Ver telefone' },
@@ -87,6 +87,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('botaoDownloadBtn').addEventListener('click', async function () {
         try {
             const element = document.getElementById('areaCaptura');
+            const button = document.getElementById('botaoDownloadBtn');
+    
+            button.style.position = 'absolute';
+            button.style.visibility = 'hidden';
+    
             const canvas = await html2canvas(element);
             canvas.toBlob(function (blob) {
                 const url = URL.createObjectURL(blob);
@@ -96,10 +101,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.click();
                 URL.revokeObjectURL(url);
             }, 'image/png');
+    
+            // Restaura o estilo original do botão
+            button.style.position = '';
+            button.style.visibility = '';
         } catch (err) {
             console.error('Erro ao capturar e baixar a imagem:', err);
         }
-    });
+    });    
 
     // Animação de zoom ao carregar a página
     const zoomImage = document.getElementById('zoomImage');
@@ -119,5 +128,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     requestAnimationFrame(fazerZoom);
-});
+    });
 
