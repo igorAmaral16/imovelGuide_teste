@@ -1,0 +1,447 @@
+/* Global Styles */
+html {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Navbar styles */
+.backgroundColorNav {
+    background-color: #1B2653; /* Cor de fundo para a navbar */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white; /* Cor dos links na navbar */
+    font-size: max(1vw, 10px);
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #787878; /* Cor dos links ao passar o mouse */
+}
+
+.navbar-toggler {
+    border: none; /* Remove a borda do botão de toggle */
+}
+
+.btn-sign-in {
+    border-radius: 20px; /* Bordas arredondadas no botão */
+}
+
+.navbar-bottom {
+    background-color: #1B2653; /* Cor de fundo para a parte inferior da navbar */
+    padding-bottom: 0 !important;
+    max-height: 60px;
+    min-height: 50px;
+}
+
+.navbar-content {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.nav-link {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white; 
+    font-size: max(1vw, 10px);
+    font-weight: inherit;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link:first-child {
+    margin-left: 0;
+}
+
+.nav-link:hover {
+    color: rgb(146, 145, 145); 
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 3%;
+}
+
+.copyright-link {
+    margin-right: 2%;
+    text-decoration: none;
+    color: white; /* Cor do texto da copyright */
+    width: 90%;
+}
+
+.logo {
+    min-height: 10px;
+    min-width: 40px;
+    max-height: 40px;
+    margin-right: 20px;
+}
+
+button, .button-class { 
+    border: none;
+    outline: none;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.btn.btn-outline-success.button:hover {
+    color: whitesmoke;
+    background-color: #FE6613;
+    border-color: #b94a0e;
+}
+
+.btn.btn-outline-success.button:active {
+    color: whitesmoke;
+    background-color: #111835;
+    border-color: whitesmoke;
+}
+
+.btn-sign-in {
+    color: white;
+    border-color: white;
+    height: 40px;
+    width: 170px;
+    border-radius: 100px;
+    border-width: 2px;
+    font-weight: inherit;
+    font-family: 'roboto', sans-serif;
+    margin-left: 30px;
+}
+
+/* Input Styles */
+.inputInstructions {
+    text-indent: 20px;
+    max-width: 100%;
+    width: 400px;
+    max-height: 100%;
+    margin-top: 25px;
+    border-radius: 10px;
+    height: 50px;
+    font-family: 'roboto', sans-serif;
+    border-color: rgb(179, 179, 179);
+}
+
+.inputInstructions::placeholder {
+    color: rgb(179, 179, 179);
+    font-family: 'roboto', sans-serif;
+}
+
+.assunto {
+    text-indent: 20px;
+    padding-bottom: 80px;
+    max-width: 100%;
+    width: 400px;
+    min-width: 10%;
+    max-height: 100%;
+    margin-top: 25px;
+    border-radius: 10px;
+    height: 50px;
+    font-family: 'roboto', sans-serif;
+    border-color: rgb(179, 179, 179);
+}
+
+.assunto::placeholder {
+    color: rgb(179, 179, 179);
+    font-family: 'roboto', sans-serif;
+}
+
+.sendingMessage {
+    border-radius: 10px;
+    margin-top: 15px;
+    width: 180px;
+    height: 40px;
+    background-color: #FE6613;
+    color: white;
+    border: none; 
+    cursor: pointer; 
+}
+
+#sendingMessage:hover {
+    background-color: #e55b11; 
+}
+
+.calcular {
+    border-radius: 5px;
+    width: 110px;
+    height: 40px;
+    background-color: #FE6613;
+    color: white;
+    margin-top: 137px;
+}
+
+.gridButtons {
+    border-radius: 5px;
+    margin-top: 15px;
+    height: 40px;
+    background-color: #FE6613;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.container {
+    max-width: 100%;
+    max-height: calc(100vh - altura do navbar - altura do rodapé);
+    padding: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px; 
+    width: 100%;
+    height: auto; 
+    padding-top: 20px;
+}
+
+.grid > div {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto; /* Ajuste a altura para caber no conteúdo */
+}
+
+.profiles {
+    border: 1px solid #787878;
+    max-height: 417px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+.profile {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px radius #787878;
+}
+
+.profileText {
+    margin-left: 5%;
+    font-family: 'roboto', sans-serif;
+}
+
+.profileName {
+    color: #1B2653;
+    font-size: 30px;
+    font-family: 'roboto', sans-serif;
+}
+
+.profileImages {
+    border-radius: 10px;
+    border: 10px #787878;
+    width: fit-content;
+    height: fit-content;
+    min-width: 50%;
+    min-height: 50%;
+}
+
+.fone {
+    cursor: pointer;
+    text-decoration: underline;
+    display: inline-block;
+    border: none;
+    background: none;
+    font-size: inherit;
+    padding: 0;
+    margin: 0;
+    color: red;
+}
+
+.message {
+    width: 100%;
+    max-height: 417px;
+    min-height: 50%;
+    max-width: 400px;
+    border: 1px solid #787878;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.message-title {
+    color: #1B2653;
+}
+
+.assunto {
+    height: 130px;
+    white-space: pre-line;
+    overflow: hidden;
+}
+
+.rule {
+    width: 100%;
+    height: 417px;
+    min-width: 30px;
+    max-height: 417px;
+    min-height: 50%;
+    border: 1px solid #787878;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.rule-container {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 1fr;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.ruleInputs {
+    
+    height: 50px;
+    width: 100%;
+    min-width: 50px;
+    border-radius: 5px;
+    border-color: #787878;
+    margin-top: 25px;
+    font-family: 'roboto', sans-serif;
+}
+
+.ruleInputs::placeholder {
+    color: rgb(179, 179, 179);
+    font-family: 'roboto', sans-serif;
+}
+
+.ruleInputResultado {
+    height: 50px;
+    width: 100%;
+    min-width: 50px;
+    border: 2px solid #FE6613;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #787878;
+    cursor: not-allowed;
+    pointer-events: none;
+    margin-top: 25px;
+}
+
+.ruleInputResultado:disabled {
+    background-color: #f8f8f8;  /* Cor de fundo ao desabilitar */
+    color: #888;  /* Cor do texto ao desabilitar */
+}
+
+.ruleBars {
+    background-color: black;
+    width: 100%;
+    height: 2px;
+    font-size: 20px;
+    margin: 25px 0px 25px 0px;
+    margin-top: 45px;
+}
+
+.imageGrid {
+    cursor: pointer;
+    width: 100%;
+    height: 417px;
+    border: 1px solid #787878;
+    border-radius: 10px;
+    transition: transform 10s ease;
+    max-width: 100%;
+}
+
+.modal-line {
+    border: none;
+    border-top: 1px solid #000000;
+    margin: 10px 0;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Escurecimento do fundo */
+    display: none; /* Inicialmente escondido */
+    z-index: 1000; /* Valor alto para garantir que está acima de outros elementos */
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+    max-height: 80vh;
+    background-color: rgba(255, 255, 255, 0.767);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    z-index: 1001; /* Deve ser menor que o z-index da sobreposição */
+    display: none; /* Inicialmente escondido */
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.imageModal {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff0000; /* Cor mais clara para o botão de fechar */
+    cursor: pointer;
+    z-index: 3; /* Acima da imagem e sobreposição */
+}
+
+.close:hover,
+.close:focus {
+    color: #ff4646; /* Cor mais clara ao passar o mouse */
+}
+
+.imageDownload {
+    position: relative;
+    display: inline-block;
+}
+
+.banner {
+    position: absolute;
+    border-radius: 10px;
+    bottom: 20px; /* Espaçamento da parte inferior da imagem */
+    left: 50%;
+    transform: translateX(-50%); /* Centraliza o banner horizontalmente */
+    width: 80%; /* Reduz a largura do banner para 80% da imagem */
+    background-color: rgba(254, 101, 19, 0.918); /* Cor #FE6613 com 50% de opacidade */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+    font-family: Roboto;
+    box-sizing: border-box;
+}
+
+.video {
+    max-height: 417px;
+    max-width: 100%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.zoom-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
