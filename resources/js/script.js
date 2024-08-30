@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Download de imagem com html2canvas
-    document.getElementById('botaoDownload').addEventListener('click', async function () {
+    document.getElementById('botaoDownloadBtn').addEventListener('click', async function () {
         try {
             const element = document.getElementById('areaCaptura');
             const canvas = await html2canvas(element);
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const zoomImage = document.getElementById('zoomImage');
     const initialScale = 3;
     const targetScale = 1;
-    const step = 0.05;
+    const step = 0.01;
 
     zoomImage.style.transform = `scale(${initialScale})`;
 

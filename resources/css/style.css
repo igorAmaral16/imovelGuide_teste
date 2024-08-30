@@ -445,3 +445,45 @@ button, .button-class {
     height: 100%;
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* Coloca os itens em uma coluna */
+        grid-template-rows: auto;
+    }
+
+    .profiles, .message, .rule {
+        max-width: 100%;
+        width: auto;
+    }
+
+    .inputInstructions, .assunto, .ruleInputs {
+        width: 100%;
+    }
+
+    .btn-sign-in {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr; /* Coloca os itens em uma coluna */
+        grid-template-rows: auto;
+    }
+
+    .profiles, .message, .rule {
+        max-width: 100%;
+        width: auto;
+    }
+
+    .inputInstructions, .assunto, .ruleInputs {
+        width: 100%;
+    }
+
+    .btn-sign-in {
+        width: 100%;
+        margin-left: 0;
+    }
+}
